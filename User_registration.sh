@@ -48,3 +48,15 @@ then
 else
    echo "Mobile no. is invalid"
 fi
+
+echo "Enter your password :"
+read Password
+
+   pattern4="^[A-Za-z0-9]{8}$"
+
+if [[ $Password =~ $pattern4 ]]
+then
+   echo "Password is valid"
+else
+   echo "Password is invalid"
+fi
