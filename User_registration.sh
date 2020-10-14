@@ -52,7 +52,7 @@ fi
 echo "Enter your password :"
 read Password
 
-   pattern4="^[A-Za-z0-9]{8}$"
+   pattern4="^([A-Z]{1}[A-Za-z0-9]{7})$"
 
 if [[ $Password =~ $pattern4 ]]
 then
