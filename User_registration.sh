@@ -36,3 +36,15 @@ then
 else
    echo "email is invalid"
 fi
+
+echo "Enter your Mobile No. :"
+read Mob_No
+
+   pattern3="^([0-9]{2})\ ([1-9]{1}[0-9]{9})$"
+
+if [[ $Mob_No =~ $pattern3 ]]
+then
+   echo "Mobile no.  is valid"
+else
+   echo "Mobile no. is invalid"
+fi
