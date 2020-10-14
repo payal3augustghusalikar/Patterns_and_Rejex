@@ -24,3 +24,15 @@ then
 else
    echo "Last Name is invalid"
 fi
+
+echo "Enter your E-mail ID :"
+read Email
+
+   pattern2="^([a-z]{3,})([\.a-z]*)@([a-z]{2})\.([a-z]{2})([\.]{1}[a-z]{2}){0,1}$"
+
+if [[ $Email =~ $pattern2 ]]
+then
+   echo "email is valid"
+else
+   echo "email is invalid"
+fi
