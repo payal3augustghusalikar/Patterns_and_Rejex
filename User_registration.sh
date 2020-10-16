@@ -90,9 +90,24 @@ function password()
 
 #function call
 
+
 echo "Please enter details as follws : "
 	first_name
 	last_name
 	email_ID
 	mobile_No
 	password
+
+
+echo "Enter your E-mail ID :"
+read value
+
+ pattern="^([a-z]+[a-z0-9\_\-\+]*[\.]{0,1}[a-z0-9]+)@([a-z]{3,4}\.[a-z]{0,3}(\.[a-z]{2}){0,1}$"
+# pattern="^([a-zA-Z0-9\.\-\+]+)@([]a-zA-Z0-9\.]{1,5})([a-zA-Z\.]+){1,4}([a-zA-Z]){1,3})$"
+if [[ $value =~ $pattern ]]
+then
+   echo "email is valid"
+else
+   echo "email is invalid"
+fi
+
