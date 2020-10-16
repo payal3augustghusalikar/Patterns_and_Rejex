@@ -62,7 +62,7 @@ else
 fi
 
 #to check all email samples
-function Check_email
+function Check_email()
 {
 	echo "Enter your E-mail ID :"
 	read value
