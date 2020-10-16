@@ -11,12 +11,12 @@ function first_name()
 
    pattern="^([A-Z]{1})[a-zA-Z]{2,}$"
 
-		if [[ $Name =~ $pattern ]]
-		then
-			echo "first Name is valid"
-		else
-			echo "first Name is invalid"
-		fi
+	if [[ $Name =~ $pattern ]]
+	then
+		echo "first Name is valid"
+	else
+		echo "first Name is invalid"
+	fi
 }
 
 #to get last name
@@ -99,7 +99,7 @@ echo "Please enter details as follws : "
 	password
 
 #to check all email samples
-function Check_email
+function Check_email()
 {
 	echo "Enter your E-mail ID :"
 	read value
